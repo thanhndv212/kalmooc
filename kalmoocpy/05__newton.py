@@ -3,7 +3,6 @@ from mpl_toolkits import mplot3d
 import numpy as np
 import scipy as sp
 import matplotlib.pyplot as plt
-%matplotlib
 
 # ex5
 
@@ -82,3 +81,4 @@ def newton(p0, epsilon, max_iter=100):
 
 P = newton(p0=[4,3], epsilon=0.01)
 print("Solution by Newton method: ",P, f(P))
+plt.show()
